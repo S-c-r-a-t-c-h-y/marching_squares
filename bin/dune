@@ -1,0 +1,4 @@
+(executable
+ (public_name marching_squares)
+ (name main)
+ (libraries marching_squares))
