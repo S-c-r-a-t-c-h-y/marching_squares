@@ -5,7 +5,7 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github S-c-r-a-t-c-h-y/marching_squares))
 
 (authors "Amaury Mazoyer")
 
@@ -13,14 +13,14 @@
 
 (license LICENSE)
 
-(documentation https://url/to/documentation)
+(documentation https://github.com/S-c-r-a-t-c-h-y/marching_squares/wiki)
 
 (package
  (name marching_squares)
- (synopsis "A short synopsis")
- (description "A longer description")
+ (synopsis "Marching squares implementation")
+ (description "A full implementation of the marching squares algorithm in OCaml")
  (depends ocaml dune)
  (tags
-  (topics "to describe" your project)))
+  (algorithm "marching squares")))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
