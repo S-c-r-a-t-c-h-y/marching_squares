@@ -1,3 +1,4 @@
 (library
  (name marching_squares)
- (libraries Graphics Images))
+ (libraries graphics)
+ (modules Algorithm Display Images))
