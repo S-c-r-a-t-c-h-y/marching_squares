@@ -36,7 +36,10 @@ let () =
   (* let ppm = Images.open_ppm "src/test.pnm" in
      let rgb_img = Images.ppm_to_rgb ppm in
      Display.display_rgb_image rgb_img 0 0 ~scale:100 *)
-  let ppm = Images.open_ppm "src/champollion_cour_honneur.pnm" in
-  let rgb_img = Images.ppm_to_rgb ppm in
-  Display.display_rgb_image rgb_img 0 0 ~scale:1
-(* Display.march_and_draw_ppm "src/test_cloud.pnm" 190 1 1 200 *)
+  (* let ppm = Images.open_ppm "src/vue_de_grenoble.pnm" in
+     let rgb_img = Images.ppm_to_rgb ppm in
+     Display.display_rgb_image rgb_img 0 0 ~scale:1 *)
+  (* Display.march_and_draw_ppm "src/test_cloud.pnm" 190 1 1 200 *)
+  Display.march_and_draw_ppm "src/champollion_cour_honneur.pnm" (65535 / 2) 5 5
+    1
+(* Display.march_and_draw_ppm "src/heightmap1.pgm" (255 / 2) 5 5 1 *)

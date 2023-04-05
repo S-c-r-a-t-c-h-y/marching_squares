@@ -52,8 +52,9 @@ let march_and_draw_ppm (filename : string) (delta : int) (stepX : int)
   let ppm = open_ppm filename in
   let rgb = Images.ppm_to_rgb ppm in
   let n = ppm.height and m = ppm.width in
-  Printf.sprintf " %dx%d" (m  * scale) (n * scale)
-  |> Graphics.open_graph;
+  Printf.sprintf " %dx%d" (m * scale) (n * scale) |> Graphics.open_graph;
+  Graphics.set_color Graphics.red;
+  Graphics.set_line_width 2;
   Graphics.set_window_title "Marching squares OCaml";
   display_rgb_image rgb ~scale ~open_window:false 0 0;
   marching_squares
